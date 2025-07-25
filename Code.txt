@@ -1,0 +1,16 @@
+mkdir user-profile-app
+cd user-profile-app
+npm init -y
+npm install express mongoose body-parser cors dotenv
+
+mongod --version
+sudo systemctl start mongod
+sudo systemctl status mongod
+sudo systemctl enable mongod
+
+
+npm install --save-dev nodemon
+npm run dev
+
+
+node server.js

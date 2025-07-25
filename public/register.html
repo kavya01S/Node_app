@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    label {
+      display: inline-block;
+      width: 150px;
+    }
+    input, select {
+      padding: 8px;
+      margin-bottom: 12px;
+      width: 250px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>User Registration</h2>
+  <form action="/api/users/add" method="POST">
+    <label for="firstName">First Name *</label>
+    <input type="text" name="firstName" required><br>
+
+    <label for="lastName">Last Name *</label>
+    <input type="text" name="lastName" required><br>
+
+    <label for="email">Email *</label>
+    <input type="email" name="email" required><br>
+
+    <label for="dob">Date of Birth *</label>
+    <input type="date" name="dob" required><br>
+
+    <label for="designation">Designation</label>
+    <input type="text" name="designation"><br>
+
+    <label for="role">Role</label>
+    <input type="text" name="role"><br>
+
+    <label for="mobile">Mobile Number *</label>
+    <input type="text" name="mobile" required><br>
+
+    <label for="password">Password *</label>
+    <input type="password" name="password" required><br>
+
+    <label for="confirmPassword">Re-enter Password *</label>
+    <input type="password" name="confirmPassword" required><br>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "user-profile-app",
+  "version": "1.0.0",
+  "description": "A basic Node.js app for managing user profiles with MongoDB and secure Argon2 password handling.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "argon2",
+    "user-profile"
+  ],
+  "dependencies": {
+    "argon2": "^0.43.1",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
